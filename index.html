@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Preview</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>World Leaders Search</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+
+    .search-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    #searchInput {
+      padding: 12px 20px;
+      width: 300px;
+      border: 2px solid #555;
+      border-radius: 25px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    #searchResults {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .item {
+      background: white;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 18px;
+    }
+
+    #noMatch {
+      text-align: center;
+      color: red;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    🌍 World Leaders Directory
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search countries or leaders...">
+  </div>
+
+  <div id="searchResults">
+<div class="item">Afghanistan - Prime Minister Hasan Akhund</div>
+<div class="item">Albania - President Bajram Begaj</div>
+<div class="item">Algeria - President Abdelmadjid Tebboune</div>
+<div class="item">Andorra - Prime Minister Xavier Espot Zamora</div>
+<div class="item">Angola - President João Lourenço</div>
+<div class="item">Antigua and Barbuda - Prime Minister Gaston Browne</div>
+<div class="item">Argentina - President Javier Milei</div>
+<div class="item">Armenia - President Vahagn Khachaturyan</div>
+<div class="item">Australia - Prime Minister Anthony Albanese</div>
+<div class="item">Austria - Chancellor Christian Stocker</div>
+<div class="item">Azerbaijan - President Ilham Aliyev</div>
+<div class="item">Bahamas - Prime Minister Philip Davis</div>
+<div class="item">Bahrain - King Hamad bin Isa Al Khalifa</div>
+<div class="item">Bangladesh - Prime Minister Sheikh Hasina</div>
+<div class="item">Barbados - Prime Minister Mia Mottley</div>
+<div class="item">Belarus - President Alexander Lukashenko</div>
+<div class="item">Belgium - Prime Minister Bart De Wever</div>
+<div class="item">Belize - Prime Minister Johnny Briceño</div>
+<div class="item">Benin - President Patrice Talon</div>
+<div class="item">Bhutan - Prime Minister Tshering Tobgay</div>
+<div class="item">Bolivia - President Luis Arce</div>
+<div class="item">Bosnia and Herzegovina - Chairman Željko Komšić</div>
+<div class="item">Botswana - President Duma Boko</div>
+<div class="item">Brazil - President Luiz Inácio Lula da Silva</div>
+<div class="item">Brunei - Sultan Hassanal Bolkiah</div>
+<div class="item">Bulgaria - Prime Minister Rossen Jeliazkov</div>
+<div class="item">Burkina Faso - President Ibrahim Traoré</div>
+<div class="item">Burundi - President Évariste Ndayishimiye</div>
+<div class="item">Cabo Verde - President José Maria Neves</div>
+<div class="item">Cambodia - Prime Minister Hun Manet</div>
+<div class="item">Cameroon - President Paul Biya</div>
+<div class="item">Canada - Prime Minister Mark Carney</div>
+<div class="item">Central African Republic - President Faustin-Archange Touadéra</div>
+<div class="item">Chad - President Mahamat Déby</div>
+<div class="item">Chile - President Gabriel Boric</div>
+<div class="item">China - President Xi Jinping</div>
+<div class="item">Colombia - President Gustavo Petro</div>
+<div class="item">Comoros - President Azali Assoumani</div>
+<div class="item">Congo (Brazzaville) - President Denis Sassou Nguesso</div>
+<div class="item">Congo (Kinshasa) - President Félix Tshisekedi</div>
+<div class="item">Costa Rica - President Rodrigo Chaves Robles</div>
+<div class="item">Croatia - Prime Minister Andrej Plenković</div>
+<div class="item">Cuba - President Miguel Díaz-Canel</div>
+<div class="item">Cyprus - President Nikos Christodoulides</div>
+<div class="item">Czech Republic - Prime Minister Petr Fiala</div>
+<div class="item">Denmark - Prime Minister Mette Frederiksen</div>
+<div class="item">Djibouti - President Ismaïl Omar Guelleh</div>
+<div class="item">Dominica - President Sylvanie Burton</div>
+<div class="item">Dominican Republic - President Luis Abinader</div>
+<div class="item">Ecuador - President Daniel Noboa</div>
+<div class="item">Egypt - President Abdel Fattah el-Sisi</div>
+<div class="item">El Salvador - President Nayib Bukele</div>
+<div class="item">Equatorial Guinea - President Teodoro Obiang Nguema Mbasogo</div>
+<div class="item">Eritrea - President Isaias Afwerki</div>
+<div class="item">Estonia - Prime Minister Kaja Kallas</div>
+<div class="item">Eswatini - King Mswati III</div>
+<div class="item">Ethiopia - Prime Minister Abiy Ahmed</div>
+<div class="item">Fiji - Prime Minister Sitiveni Rabuka</div>
+<div class="item">Finland - President Alexander Stubb</div>
+<div class="item">France - Prime Minister François Bayrou</div>
+<div class="item">Gabon - President Brice Oligui Nguema</div>
+<div class="item">Gambia - President Adama Barrow</div>
+<div class="item">Georgia - President Mikheil Kavelashvili</div>
+<div class="item">Germany - Chancellor Friedrich Merz</div>
+<div class="item">Ghana - President John Mahama</div>
+<div class="item">Greece - President Katerina Sakellaropoulou</div>
+<div class="item">Grenada - Prime Minister Dickon Mitchell</div>
+<div class="item">Guatemala - President Bernardo Arévalo</div>
+<div class="item">Guinea - President Mamady Doumbouya</div>
+<div class="item">Guinea-Bissau - President Umaro Sissoco Embaló</div>
+<div class="item">Guyana - President Irfaan Ali</div>
+<div class="item">Haiti - Prime Minister Ariel Henry</div>
+<div class="item">Honduras - President Xiomara Castro</div>
+<div class="item">Hungary - President Tamás Sulyok</div>
+<div class="item">Iceland - Prime Minister Halla Tómasdóttir</div>
+<div class="item">India - Prime Minister Narendra Modi</div>
+<div class="item">Indonesia - President Prabowo Subianto</div>
+<div class="item">Iran - President Masoud Pezeshkian</div>
+<div class="item">Iraq - President Abdul Latif Rashid</div>
+<div class="item">Ireland - President Michael D. Higgins</div>
+<div class="item">Israel - President Isaac Herzog</div>
+<div class="item">Italy - Prime Minister Giorgia Meloni</div>
+<div class="item">Jamaica - Prime Minister Andrew Holness</div>
+<div class="item">Japan - Prime Minister Fumio Kishida</div>
+<div class="item">Jordan - King Abdullah II</div>
+<div class="item">Kazakhstan - President Kassym-Jomart Tokayev</div>
+<div class="item">Kenya - President William Ruto</div>
+<div class="item">Kiribati - President Taneti Maamau</div>
+<div class="item">Kuwait - Emir Mishal Al-Ahmad Al-Jaber Al-Sabah</div>
+<div class="item">Kyrgyzstan - President Sadyr Japarov</div>
+<div class="item">Laos - President Thongloun Sisoulith</div>
+<div class="item">Latvia - Prime Minister Evika Siliņa</div>
+<div class="item">Lebanon - President Joseph Aoun</div>
+<div class="item">Lesotho - King Letsie III</div>
+<div class="item">Liberia - President Joseph Boakai</div>
+<div class="item">Libya - Chairman Mohamed al-Menfi</div>
+<div class="item">Liechtenstein - Prime Minister Brigitte Haas</div>
+<div class="item">Lithuania - President Gitanas Nausėda</div>
+<div class="item">Luxembourg - Prime Minister Luc Frieden</div>
+<div class="item">Madagascar - President Andry Rajoelina</div>
+<div class="item">Malawi - President Lazarus Chakwera</div>
+<div class="item">Malaysia - Prime Minister Anwar Ibrahim</div>
+<div class="item">Maldives - President Mohamed Muizzu</div>
+<div class="item">Mali - President Assimi Goïta</div>
+<div class="item">Malta - President Myriam Spiteri Debono</div>
+<div class="item">Marshall Islands - President Hilda Heine</div>
+<div class="item">Mauritania - President Mohamed Ould Ghazouani</div>
+<div class="item">Mauritius - President Pritivirajsing Roopun</div>
+<div class="item">Mexico - President Claudia Sheinbaum</div>
+<div class="item">Micronesia - President Wesley Simina</div>
+<div class="item">Moldova - President Maia Sandu</div>
+<div class="item">Monaco - Prince Albert II</div>
+<div class="item">Mongolia - President Ukhnaagiin Khürelsükh</div>
+<div class="item">Montenegro - President Jakov Milatović</div>
+<div class="item">Morocco - King Mohammed VI</div>
+<div class="item">Mozambique - President Filipe Nyusi</div>
+<div class="item">Myanmar - Acting President Min Aung Hlaing</div>
+<div class="item">Namibia - President Netumbo Nandi-Ndaitwah</div>
+<div class="item">Nauru - President David Adeang</div>
+<div class="item">Nepal - Prime Minister Pushpa Kamal Dahal</div>
+<div class="item">Netherlands - Prime Minister Dick Schoof</div>
+<div class="item">New Zealand - Prime Minister Christopher Luxon</div>
+<div class="item">Nicaragua - President Daniel Ortega</div>
+<div class="item">Niger - President Abdourahamane Tchiani</div>
+<div class="item">Nigeria - President Bola Tinubu</div>
+<div class="item">North Korea - Supreme Leader Kim Jong-un</div>
+<div class="item">North Macedonia - President Gordana Siljanovska-Davkova</div>
+<div class="item">Norway - Prime Minister Jonas Gahr Støre</div>
+<div class="item">Oman - Sultan Haitham bin Tariq</div>
+<div class="item">Pakistan - President Asif Ali Zardari</div>
+<div class="item">Palau - President Surangel Whipps Jr.</div>
+<div class="item">Panama - President Laurentino Cortizo</div>
+<div class="item">Papua New Guinea - Prime Minister James Marape</div>
+ <div class="item">Pakistan - President Asif Ali Zardari</div>
+<div class="item">Palau - President Surangel Whipps Jr.</div>
+<div class="item">Panama - President Laurentino Cortizo</div>
+<div class="item">Papua New Guinea - Prime Minister James Marape</div>
+<div class="item">Paraguay - President Santiago Peña</div>
+<div class="item">Peru - President Dina Boluarte</div>
+<div class="item">Philippines - President Ferdinand Marcos Jr.</div>
+<div class="item">Poland - Prime Minister Donald Tusk</div>
+<div class="item">Portugal - President Marcelo Rebelo de Sousa</div>
+<div class="item">Qatar - Emir Tamim bin Hamad Al Thani</div>
+<div class="item">Romania - President Klaus Iohannis</div>
+<div class="item">Russia - President Vladimir Putin</div>
+<div class="item">Rwanda - President Paul Kagame</div>
+<div class="item">Saint Kitts and Nevis - Prime Minister Terrance Drew</div>
+<div class="item">Saint Lucia - Prime Minister Philip J. Pierre</div>
+<div class="item">Saint Vincent and the Grenadines - Prime Minister Ralph Gonsalves</div>
+<div class="item">Samoa - Prime Minister Fiame Naomi Mata'afa</div>
+<div class="item">San Marino - Captains Regent Alessandro Rossi and Milena Gasperoni</div>
+<div class="item">São Tomé and Príncipe - President Carlos Vila Nova</div>
+<div class="item">Saudi Arabia - King Salman bin Abdulaziz Al Saud</div>
+<div class="item">Senegal - President Macky Sall</div>
+<div class="item">Serbia - President Aleksandar Vučić</div>
+<div class="item">Seychelles - President Wavel Ramkalawan</div>
+<div class="item">Sierra Leone - President Julius Maada Bio</div>
+<div class="item">Singapore - Prime Minister Lee Hsien Loong</div>
+<div class="item">Slovakia - President Zuzana Čaputová</div>
+<div class="item">Slovenia - President Nataša Pirc Musar</div>
+<div class="item">Solomon Islands - Prime Minister Manasseh Sogavare</div>
+<div class="item">Somalia - President Hassan Sheikh Mohamud</div>
+<div class="item">South Africa - President Cyril Ramaphosa</div>
+<div class="item">South Korea - President Lee Jae-myung</div>
+<div class="item">South Sudan - President Salva Kiir Mayardit</div>
+<div class="item">Spain - Prime Minister Pedro Sánchez</div>
+<div class="item">Sri Lanka - President Ranil Wickremesinghe</div>
+<div class="item">Sudan - Chairman Abdel Fattah al-Burhan</div>
+<div class="item">Suriname - President Chandrikapersad Santokhi</div>
+<div class="item">Sweden - Prime Minister Ulf Kristersson</div>
+<div class="item">Switzerland - President Karin Keller-Sutter</div>
+<div class="item">Syria - President Bashar al-Assad</div>
+<div class="item">Taiwan - President Lai Ching-te</div>
+<div class="item">Tajikistan - President Emomali Rahmon</div>
+<div class="item">Tanzania - President Samia Suluhu Hassan</div>
+<div class="item">Thailand - Prime Minister Srettha Thavisin</div>
+<div class="item">Timor-Leste - President José Ramos-Horta</div>
+<div class="item">Togo - President Faure Gnassingbé</div>
+<div class="item">Tonga - King Tupou VI</div>
+<div class="item">Trinidad and Tobago - Prime Minister Keith Rowley</div>
+<div class="item">Tunisia - President Kais Saied</div>
+<div class="item">Turkey - President Recep Tayyip Erdoğan</div>
+<div class="item">Turkmenistan - President Serdar Berdimuhamedow</div>
+<div class="item">Tuvalu - Prime Minister Kausea Natano</div>
+<div class="item">Uganda - President Yoweri Museveni</div>
+<div class="item">Ukraine - President Volodymyr Zelenskyy</div>
+<div class="item">United Arab Emirates - President Mohamed bin Zayed Al Nahyan</div>
+<div class="item">United Kingdom - Prime Minister Keir Starmer</div>
+<div class="item">United States - President Donald Trump</div>
+<div class="item">Uruguay - President Yamandú Orsi</div>
+<div class="item">Uzbekistan - President Shavkat Mirziyoyev</div>
+<div class="item">Vanuatu - President Nikenike Vurobaravu</div>
+<div class="item">Vatican City - Pope Leo XIV</div>
+<div class="item">Venezuela - President Nicolás Maduro</div>
+<div class="item">Vietnam - President Lương Cường</div>
+<div class="item">Yemen - Chairman Rashad al-Alimi</div>
+<div class="item">Zambia - President Hakainde Hichilema</div>
+<div class="item">Zimbabwe - President Emmerson Mnangagwa</div>
+</div>
+
+  <script>
+    const input = document.getElementById("searchInput");
+    const items = document.querySelectorAll("#searchResults .item");
+
+    input.addEventListener("keyup", function () {
+      const value = this.value.toLowerCase();
+      let anyVisible = false;
+
+      items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        const show = text.includes(value);
+        item.style.display = show ? "block" : "none";
+        if (show) anyVisible = true;
+      });
+
+      // Show or remove "No results found"
+      if (!anyVisible && !document.getElementById("noMatch")) {
+        const msg = document.createElement("div");
+        msg.id = "noMatch";
+        msg.textContent = "No results found.";
+        document.getElementById("searchResults").appendChild(msg);
+      } else if (anyVisible && document.getElementById("noMatch")) {
+        document.getElementById("noMatch").remove();
+      }
+    });
+  </script>
+
+</body>
+
+<footer style="text-align: center; padding: 10px; background-color: #f2f2f2; font-family: Arial, sans-serif;">
+  Made by 
+  <a href="https://linktr.ee/sanketdutta" target="_blank" rel="noopener noreferrer" class="color-change">
+    Sanket
+  </a>
+</footer>
+
+<style>
+  @keyframes colorCycle {
+    0% { color: #ff0000; }
+    25% { color: #00ff00; }
+    50% { color: #0000ff; }
+    75% { color: #ffa500; }
+    100% { color: #ff0000; }
+  }
+
+  .color-change {
+    animation: colorCycle 5s linear infinite;
+    text-decoration: none;
+
+  }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Background with Footer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      animation: bgColorCycle 10s linear infinite;
+    }
+
+    @keyframes bgColorCycle {
+      0% { background-color: #ff9a9e; }
+      25% { background-color: #fad0c4; }
+      50% { background-color: #fbc2eb; }
+      75% { background-color: #a1c4fd; }
+      100% { background-color: #ff9a9e; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    footer a {
+      color: #000;
+      text-decoration: none;
+      animation: linkColorCycle 5s linear infinite;
+    }
+
+    @keyframes linkColorCycle {
+      0% { color: #ff0000; }
+      25% { color: #00ff00; }
+      50% { color: #0000ff; }
+      75% { color: #ffa500; }
+      100% { color: #ff0000; }
+    }
+  </style>
+
+
+</html>
+
+</body>
+</html>
